@@ -15,7 +15,14 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+p{
+	font-size: 12px;
+}
+#city{
+	font-size:14px;
+}
 span {
+	font-size: 18px;
 	font-weight: 700;
 	color: $darkBlue;
 }
@@ -27,38 +34,37 @@ span {
 	}
 }
 .top{
-	top: -100%;
-	left:-25%;
+	top: 0;
+	left: 50%;
+	transform: translate(-100%, -50%);
 }
 .bottom{
-	bottom:  -100%;
-	right:-25%;
+	bottom:  0;
+	left: 50%;
+	transform: translateY(60%);
 }
 .card{
-	& > div.margin-b {
-	margin-bottom: 70px;
-	}
 	background: white;
 	border: none;
 	border-radius: 15px;
-	min-width: 325px;
+	min-width: 350px;
 	min-height: 250px;
 	padding: 0 0 25px 0;
 	display:flex;
 	flex-flow:column;
-	box-shadow: 0px 0px 10px $darkBlue;
 	overflow: hidden;
 }
 #card-top {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 75px;
 	background: url(images/bg-pattern-card.svg);
 	height: 140px;
 	width:100%;
 	& > img{
 		border: 7px solid white;
 		border-radius: 50%;
-		transform: scale(70%) translateY(100px);
+		transform: scale(75%) translateY(100px);
 	}
 }
 #stats{
@@ -72,7 +78,26 @@ span {
 
 #name {
 	text-align: center;
+	margin-bottom: 35px;
 }
 
 
+@media(max-width: 650px){
+	body {
+		font-size: 14px;
+	}
+	.card{
+		min-width: 320px;
+	}
+.top{
+	top: 0;
+	left: 50%;
+	transform: translate(-95%, -65%);
+}
+.bottom{
+	bottom:  0;
+	left: 50%;
+	transform: translateY(50%);
+}
+}
 
