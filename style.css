@@ -85,10 +85,6 @@ span {
 }
 
 @media (max-width: 650px) {
-  body {
-    font-size: 14px;
-  }
-
   .card {
     min-width: 320px;
   }
