@@ -5,7 +5,6 @@ $darkGray: hsl(0,0%,59%);
 
 
 body{
-	min-width: 100vh;
 	min-height: 100vh;
 	font-size: 18px;
 	color: $darkGrayBlue;
@@ -25,48 +24,54 @@ span {
 	z-index: -1;
 	& > img{
 		display:block;
-		width:100%;
-		height:auto;
 	}
 }
 .top{
-	width: 75%;
-	height: auto;
 	top: -100%;
 	left:-25%;
 }
 .bottom{
-	width: 75%;
-	height: auto;
 	bottom:  -100%;
 	right:-25%;
 }
 .card{
+	& > div.margin-b {
+	margin-bottom: 70px;
+	}
 	background: white;
 	border: none;
 	border-radius: 15px;
-	min-width: 300px;
-	min-height: 300px;
-	padding: 10px;
+	min-width: 325px;
+	min-height: 250px;
+	padding: 0 0 25px 0;
 	display:flex;
 	flex-flow:column;
-	align-items: center;
-	box-shadow: 0px 0px 20px $darkBlue;
+	box-shadow: 0px 0px 10px $darkBlue;
+	overflow: hidden;
+}
+#card-top {
+	display: flex;
+	justify-content: center;
+	background: url(images/bg-pattern-card.svg);
+	height: 140px;
+	width:100%;
+	& > img{
+		border: 7px solid white;
+		border-radius: 50%;
+		transform: scale(70%) translateY(100px);
+	}
 }
 #stats{
 	display: flex;
-	justify-content: safe;
+	width:100%;
+	justify-content: space-evenly;
 	& > div {
-		margin: 15px;
+		text-align: center;
 	}
 }
 
 #name {
 	text-align: center;
-	& > img{
-		border: 2px solid white;
-		border-radius: 50%;
-	}
 }
 
 
