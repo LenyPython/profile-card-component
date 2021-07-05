@@ -50,7 +50,7 @@ span {
   border-radius: 15px;
   min-width: 350px;
   min-height: 250px;
-  padding: 0 0 25px 0;
+  padding: 0 0 10px 0;
   display: flex;
   flex-flow: column;
   overflow: hidden;
